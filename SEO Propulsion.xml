@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Propulsion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\..\ModTools\Parts\Propulsion.xsd">
+  <Fuels>
+    <!-- LIQUID FUELS -->
+    <Fuel id="LOX/RP1" name="LqdOxygen                              Kerosene" gamma="1.22" density="1.02" molecularWeight="21.6" combustionTemperature="3526" price="1.14" explosivePower="25" description="It's cheap and only moderately cryogenic so it's safer and easier to work with, but it's not the most efficient fuel out there">
+      <Visual exhaustIntensity="0.5" exhaustDetailIntensity="0.01" exhaustColor="#EF8700FF" smokeIntensity="0.25" />
+    </Fuel>
+    <Fuel id="LOX/LH2" name="LqdOxygen                              LqdHydrogen" gamma="1.21" density="0.32" molecularWeight="11.8" combustionTemperature="3304" price="3.50" enginePriceScale="1.10" explosivePower="25" description="Hydrolox is very efficient, but it has extremely low density and therefore requires larger fuel tanks">
+      <Visual exhaustIntensity="0.00001" exhaustDetailIntensity="0" exhaustColor="#404090FF" smokeIntensity="0" />
+    </Fuel>
+    <Fuel id="LOX/CH4" name="LqdOxygen                              LqdMethane" gamma="1.21" density="0.79" molecularWeight="19.6" combustionTemperature="3379" price="1.35" enginePriceScale="1.05" explosivePower="25" description="Somewhat more efficient than LOX / Kerosene, but easier to work with than LOX / L.Hydrogen">
+      <Visual exhaustIntensity="1" exhaustDetailIntensity="0" exhaustColor="#3287FF" smokeIntensity="0.10" />
+    </Fuel>
+    <Fuel id="LOX/CH4O" name="LqdOxygen                              Methanol" gamma="1.19" density="0.95" molecularWeight="22.7" combustionTemperature="3214" price="0.9" explosivePower="20" description="If you hear someone call this A stoff and M stoff you better call Blazkowicz">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#008927FF" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="LOX/C2H6O-75" name="LqdOxygen                              Ethanol(75%)" gamma="1.20" density="0.98" molecularWeight="23.4" combustionTemperature="3167" price="0.9" explosivePower="20" description="This is meant to be used in rockets, nothing else, but keep your thirsty engineers away just in case">
+      <Visual exhaustIntensity="0.4" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="LOX/C2H6O-95" name="LqdOxygen                              Ethanol(95%)" gamma="1.20" density="0.97" molecularWeight="22.8" combustionTemperature="3314" price="0.9" explosivePower="20" description="Using almost pure alcohol as a fuel so the thirsty engineers stop drinking it">
+      <Visual exhaustIntensity="0.4" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="LOX/NH3" name="LqdOxygen                              Ammonia" gamma="1.20" density="0.88" molecularWeight="19.1" combustionTemperature="3020" price="0.9" explosivePower="20" description="This relatively benign propellant combination was used in the XLR-99 rocket motor that powered the X-15 manned rocketplane in the 1960's">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#EDC768" smokeIntensity="1.5" />
+    </Fuel>
+    <Fuel id="LOX/UDMH" name="LqdOxygen                              UDMH" gamma="1.22" density="0.96" molecularWeight="19.8" combustionTemperature="3447" price="0.9" explosivePower="20" description="Cryo oxydizer and a very toxic fuel, enjoy the ride">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#BC4E00FF" smokeIntensity="2.5" />
+    </Fuel>
+    <Fuel id="LOX/UH25" name="LqdOxygen                              UH-25" gamma="1.22" density="0.98" molecularWeight="19.5" combustionTemperature="3412" price="0.9" explosivePower="20" description="In order to reduce UDMH toxicity now this has 25% Hydrazine">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#605700FF" smokeIntensity="2" />
+    </Fuel>
+    <Fuel id="LOX/A-50" name="LqdOxygen                              Aerozine-50" gamma="1.22" density="1" molecularWeight="19.1" combustionTemperature="3373" price="0.9" explosivePower="20" description="UH-25 was still toxic so now this comes with 50% Hydrazine">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C1B400FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="LOX/N2H4" name="LqdOxygen                              Hydrazine" gamma="1.22" density="1.06" molecularWeight="18.2" combustionTemperature="3275" price="0.9" explosivePower="20" description="Hm, so it looks Hydrazine is also very toxic, who would have said that heh">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#EDD768" smokeIntensity="1.5" />
+    </Fuel>
+    <Fuel id="LOX/MMH" name="LqdOxygen                              MMH" gamma="1.22" density="0.99" molecularWeight="19.3" combustionTemperature="3399" price="0.9" explosivePower="20" description="A bit more stable than Hydrazine and a bit more efficient than UDMH but it's still liquid cancer">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#605F00FF" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="LOX/C6H5NH2" name="LqdOxygen                              Aniline" gamma="1.23" density="1.09" molecularWeight="24.2" combustionTemperature="3657" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#D8A67D" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="LOX/T-250" name="LqdOxygen                              Tonka-250" gamma="1.22" density="1.02" molecularWeight="22.5" combustionTemperature="3543" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#E1915F" smokeIntensity="3" />
+    </Fuel>
+    
+    
+    <Fuel id="N2O/RP1" name="Nitrous Oxide                              Kerosene" gamma="1.24" density="1.15" molecularWeight="25.7" combustionTemperature="3241" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/LH2" name="Nitrous Oxide                              LqdHydrogen" gamma="1.24" density="0.54" molecularWeight="16.8" combustionTemperature="2905" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#AFA3FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/CH4" name="Nitrous Oxide                              LqdMethane" gamma="1.24" density="1.02" molecularWeight="24.6" combustionTemperature="3147" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#7FD2FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/CH4O" name="Nitrous Oxide                              Methanol" gamma="1.22" density="1.09" molecularWeight="25.4" combustionTemperature="2998" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#00C68E" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/C2H6O-75" name="Nitrous Oxide                              Ethanol(75%)" gamma="1.22" density="1.11" molecularWeight="25.9" combustionTemperature="2957" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/C2H6O-95" name="Nitrous Oxide                              Ethanol(95%)" gamma="1.23" density="1.11" molecularWeight="25.8" combustionTemperature="3076" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/N2H4" name="Nitrous Oxide                              Hydrazine" gamma="1.24" density="1.14" molecularWeight="21.2" combustionTemperature="3042" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3E1FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/MMH" name="Nitrous Oxide                              MMH" gamma="1.24" density="1.12" molecularWeight="23.2" combustionTemperature="3171" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3E1FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/UDMH" name="Nitrous Oxide                              UDMH" gamma="1.24" density="1.10" molecularWeight="24" combustionTemperature="3171" price="0.9" explosivePower="20" description="From WWII to futuristic green propellants. N2O is very promising, and here you are, mixing it with venom">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/UH25" name="Nitrous Oxide                              UH-25" gamma="1.24" density="1.11" molecularWeight="23.5" combustionTemperature="3182" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/A-50" name="Nitrous Oxide                              Aerozine-50" gamma="1.24" density="1.12" molecularWeight="22.9" combustionTemperature="3148" price="0.9" explosivePower="20" description="From WWII to futuristic green propellants. N2O is very promising, and here you are, mixing it with venoms">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/NH3" name="Nitrous Oxide                              Ammonia" gamma="1.23" density="1.04" molecularWeight="22.9" combustionTemperature="2842" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3E1FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/C6H5NH2" name="Nitrous Oxide                              Aniline" gamma="1.25" density="1.19" molecularWeight="27.1" combustionTemperature="3321" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#D8A67D" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O/T-250" name="Nitrous Oxide                              Tonka-250" gamma="1.24" density="1.15" molecularWeight="26.2" combustionTemperature="3253" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#E1915F" smokeIntensity="3" />
+    </Fuel>
+    
+    
+    <Fuel id="N2O4/RP1" name="NTO                              Kerosene" gamma="1.22" density="1.24" molecularWeight="23.9" combustionTemperature="3342" price="0.9" explosivePower="20" description="This low-cost propellant combination was used in the Otrag modular rocket system">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O4/LH2" name="NTO                              LqdHydrogen" gamma="1.22" density="0.40" molecularWeight="13.1" combustionTemperature="2973" price="3.50" enginePriceScale="1.10" explosivePower="25" description="Hydrolox is very efficient, but it has extremely low density and therefore requires larger fuel tanks, NTO helps with this problem by adding additional density">
+      <Visual exhaustIntensity="0.00001" exhaustDetailIntensity="0" exhaustColor="#AFA3FF" smokeIntensity="0.10" />
+    </Fuel>
+    <Fuel id="N2O4/CH4" name="NTO                              LqdMethane" gamma="1.21" density="0.99" molecularWeight="22.1" combustionTemperature="3220" price="3.50" enginePriceScale="1.10" explosivePower="25" description="a Mixture of NTO and liquid Methane which offers higher density than the LOX/CH4 variant at the cost of some performance">
+      <Visual exhaustIntensity="0.00001" exhaustDetailIntensity="0" exhaustColor="#7256FF" smokeIntensity="0.10" />
+    </Fuel>
+    <Fuel id="N2O4/CH4O" name="NTO                              Methanol" gamma="1.20" density="1.12" molecularWeight="24.1" combustionTemperature="3058" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3CCFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O4/C2H6O-75" name="NTO                              Ethanol(75%)" gamma="1.20" density="1.16" molecularWeight="24.8" combustionTemperature="3006" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O4/C2H6O-95" name="NTO                              Ethanol(95%)" gamma="1.20" density="1.16" molecularWeight="24.5" combustionTemperature="3151" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O4/N2H4" name="NTO                              Hydrazine" gamma="1.23" density="1.19" molecularWeight="19.5" combustionTemperature="3137" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3E1FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O4/UDMH" name="NTO                              UDMH" gamma="1.23" density="1.14" molecularWeight="21.8" combustionTemperature="3296" price="1.12" explosivePower="30" description="Two of the main go-to storable liquids in the 50s USSR combined">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#D14900FF" smokeIntensity="2" />
+    </Fuel>
+    <Fuel id="N2O4/UH25" name="NTO                              UH-25" gamma="1.23" density="1.15" molecularWeight="21.4" combustionTemperature="3268" price="0.9" explosivePower="20" description="This mixture was never used in comercial rockets, do you really want to be the first?">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#603D00FF" smokeIntensity="2" />
+    </Fuel>
+    <Fuel id="N2O4/A-50" name="NTO                              Aerozine-50" gamma="1.23" density="1.16" molecularWeight="20.8" combustionTemperature="3229" price="0.9" explosivePower="20" description="This mixture was never used in comercial rockets, do you really want to be the first?">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#890000FF" smokeIntensity="2" />
+    </Fuel>
+    <Fuel id="N2O4/MMH" name="NTO                              MMH" gamma="1.23" density="1.16" molecularWeight="21.1" combustionTemperature="3137" price="0.9" explosivePower="20" description="The USA counterpart for NTO/UDMH, with a bit higher density">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#603E00FF" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="N2O4/NH3" name="NTO                              Ammonia" gamma="1.21" density="1.04" molecularWeight="20.8" combustionTemperature="2860" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3E1FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O4/C6H5NH2" name="NTO                              Aniline" gamma="1.23" density="1.30" molecularWeight="26.0" combustionTemperature="3452" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#D8A67D" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="N2O4/T-250" name="NTO                              Tonka-250" gamma="1.22" density="1.23" molecularWeight="24.6" combustionTemperature="3360" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#E1915F" smokeIntensity="3" />
+    </Fuel>
+    
+    
+    <Fuel id="RFNA/RP1" name="RFNA                              Kerosene" gamma="1.20" density="1.31" molecularWeight="24.4" combustionTemperature="3076" price="0.9" explosivePower="20" description="This mixture had so many combustion problems it was replaced by NTO/UDMH and long forgotten">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/LH2" name="RFNA                              LqdHydrogen" gamma="1.21" density="0.46" molecularWeight="14.3" combustionTemperature="2795" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#AFA3FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/CH4" name="RFNA                              LqdMethane" gamma="1.20" density="1.08" molecularWeight="22.9" combustionTemperature="2971" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#7FD2FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/CH4O" name="RFNA                              Methanol" gamma="1.19" density="1.17" molecularWeight="24.2" combustionTemperature="2824" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#7FD2FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/C2H6O-75" name="RFNA                              Ethanol(75%)" gamma="1.19" density="1.21" molecularWeight="24.7" combustionTemperature="2758" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/C2H6O-95" name="RFNA                              Ethanol(95%)" gamma="1.19" density="1.22" molecularWeight="24.6" combustionTemperature="2905" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/MMH" name="RFNA                              MMH" gamma="1.21" density="1.22" molecularWeight="21.7" combustionTemperature="3033" price="0.9" explosivePower="20" description="This mixture was never used in comercial rockets, do you really want to be the first?">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#601900FF" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="RFNA/N2H4" name="RFNA                              Hydrazine" gamma="1.22" density="1.24" molecularWeight="19.8" combustionTemperature="2932" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3E1FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/UDMH" name="RFNA                              UDMH" gamma="1.21" density="1.21" molecularWeight="22.4" combustionTemperature="3062" price="0.9" explosivePower="20" description="Used in the Wasserfall Ferngelenkte FlaRakete nazi rocket and in Agena, God knows why having NTO available">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/UH25" name="RFNA                              UH-25" gamma="1.21" density="1.21" molecularWeight="21.9" combustionTemperature="3037" price="0.9" explosivePower="20" description="This mixture was never used in comercial rockets, do you really want to be the first?">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#605700FF" smokeIntensity="2" />
+    </Fuel>
+    <Fuel id="RFNA/A-50" name="RFNA                              Aerozine-50" gamma="1.21" density="1.22" molecularWeight="21.3" combustionTemperature="3009" price="0.9" explosivePower="20" description="This mixture was never used in comercial rockets, do you really want to be the first?">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#C10003FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/NH3" name="RFNA                              Ammonia" gamma="1.21" density="1.09" molecularWeight="20.7" combustionTemperature="2572" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#A3E1FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/C6H5NH2" name="RFNA                              Aniline" gamma="1.21" density="1.36" molecularWeight="26.2" combustionTemperature="3160" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#CEA78B" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="RFNA/T-250" name="RFNA                              Tonka-250" gamma="1.20" density="1.29" molecularWeight="25.0" combustionTemperature="3087" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#E15413" smokeIntensity="3" />
+    </Fuel>
+    
+    
+    <Fuel id="H2O2-95/RP1" name="H2O2(95%)                              Kerosene" gamma="1.18" density="1.28" molecularWeight="21.4" combustionTemperature="2878" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFBD7F" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="H2O2-95/LH2" name="H2O2(95%)                              LqdHydrogen" gamma="1.20" density="0.55" molecularWeight="14.4" combustionTemperature="2666" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#404090FF" smokeIntensity="0" />
+    </Fuel>
+    <Fuel id="H2O2-95/CH4" name="H2O2(95%)                              LqdMethane" gamma="1.18" density="1.11" molecularWeight="20.4" combustionTemperature="2802" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#7FD2FF" smokeIntensity="0.5" />
+    </Fuel>
+    <Fuel id="H2O2-95/CH4O" name="H2O2(95%)                              Methanol" gamma="1.18" density="1.18" molecularWeight="21.5" combustionTemperature="2709" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#7FD2FF" smokeIntensity="0.5" />
+    </Fuel>
+    <Fuel id="H2O2-95/C2H6O-75" name="H2O2(95%)                              Ethanol(75%)" gamma="1.18" density="1.21" molecularWeight="21.6" combustionTemperature="2653" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/C2H6O-95" name="H2O2(95%)                              Ethanol(95%)" gamma="1.19" density="1.22" molecularWeight="21.6" combustionTemperature="2762" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/MMH" name="H2O2(95%)                              MMH" gamma="1.19" density="1.22" molecularWeight="20.0" combustionTemperature="2871" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/N2H4" name="H2O2(95%)                              Hydrazine" gamma="1.19" density="1.23" molecularWeight="18.8" combustionTemperature="2801" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/UDMH" name="H2O2(95%)                              UDMH" gamma="1.19" density="1.21" molecularWeight="20.4" combustionTemperature="2884" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FF9D7F" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/UH25" name="H2O2(95%)                              UH-25" gamma="1.19" density="1.22" molecularWeight="20.1" combustionTemperature="2870" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FF9D7F" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/A-50" name="H2O2(95%)                              Aerozine-50" gamma="1.19" density="1.22" molecularWeight="19.8" combustionTemperature="2852" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FF9D7F" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/NH3" name="H2O2(95%)                              Ammonia" gamma="1.19" density="1.11" molecularWeight="19.1" combustionTemperature="2510" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/C6H5NH2" name="H2O2(95%)                              Aniline" gamma="1.18" density="1.32" molecularWeight="22.6" combustionTemperature="2934" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFC69E" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/T-250" name="H2O2(95%)                              Tonka-250" gamma="1.18" density="1.28" molecularWeight="21.8" combustionTemperature="2884" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    
+    <Fuel id="H2O2-85/RP1" name="H2O2(85%)                              Kerosene" gamma="1.18" density="1.26" molecularWeight="21.5" combustionTemperature="2666" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFBD7F" smokeIntensity="1.5" />
+    </Fuel>
+    <Fuel id="H2O2-85/LH2" name="H2O2(85%)                              LqdHydrogen" gamma="1.19" density="0.61" molecularWeight="15.6" combustionTemperature="2544" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#404090FF" smokeIntensity="0" />
+    </Fuel>
+    <Fuel id="H2O2-85/CH4" name="H2O2(85%)                              LqdMethane" gamma="1.18" density="1.11" molecularWeight="20.6" combustionTemperature="2590" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#7FD2FF" smokeIntensity="1" />
+    </Fuel>
+    <Fuel id="H2O2-85/CH4O" name="H2O2(85%)                              Methanol" gamma="1.18" density="1.17" molecularWeight="21.4" combustionTemperature="2511" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#7FD2FF" smokeIntensity="0.5" />
+    </Fuel>
+    <Fuel id="H2O2-85/C2H6O-75" name="H2O2(85%)                              Ethanol(75%)" gamma="1.18" density="1.2" molecularWeight="21.5" combustionTemperature="2447" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/C2H6O-95" name="H2O2(85%)                              Ethanol(95%)" gamma="1.18" density="1.2" molecularWeight="21.5" combustionTemperature="2552" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#5300EFFF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/MMH" name="H2O2(85%)                              MMH" gamma="1.19" density="1.21" molecularWeight="20.3" combustionTemperature="2681" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/N2H4" name="H2O2(85%)                              Hydrazine" gamma="1.19" density="1.22" molecularWeight="19" combustionTemperature="2630" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/UDMH" name="H2O2(85%)                              UDMH" gamma="1.19" density="1.20" molecularWeight="20.7" combustionTemperature="2690" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FF9D7F" smokeIntensity="3.5" />
+    </Fuel>
+    <Fuel id="H2O2-85/UH25" name="H2O2(85%)                              UH-25" gamma="1.19" density="1.20" molecularWeight="20.4" combustionTemperature="2681" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FF9D7F" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/A-50" name="H2O2(85%)                              Aerozine-50" gamma="1.19" density="1.21" molecularWeight="20.0" combustionTemperature="2668" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FF9D7F" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/NH3" name="H2O2(85%)                              Ammonia" gamma="1.20" density="1.11" molecularWeight="19.1" combustionTemperature="2305" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/C6H5NH2" name="H2O2(85%)                              Aniline" gamma="1.18" density="1.29" molecularWeight="22.6" combustionTemperature="2719" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFC69E" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-85/T-250" name="H2O2(85%)                              Tonka-250" gamma="1.18" density="1.25" molecularWeight="21.8" combustionTemperature="2671" price="0.9" explosivePower="20" description="">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#FFE0B2" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="Monopropellant" name="Hydrazine (MonoProp)" gamma="0" density="1.2" molecularWeight="0" combustionTemperature="1800" price="176.00" explosivePower="25" description="Hydrazine is used by RCS nozzles for attitude control.">
+    </Fuel>
+    
+
+    
+    <!-- SOLID FUELS -->
+    <Fuel id="APCP" name="APCP" gamma="1.22" density="1.87" molecularWeight="23.7" combustionTemperature="3300" price="0.8" explosivePower="15" description="The most widely used SRB propellant today, characterized by it's high heat and gas production">
+      <Visual exhaustIntensity="4" exhaustDetailIntensity="0.1" exhaustColor="#F4A700FF" smokeIntensity="7" />
+    </Fuel>
+    <Fuel id="HTPB" name="HTPB" gamma="1.22" density="1.65" molecularWeight="24.4" combustionTemperature="3200" price="0.5" explosivePower="15" description="One of the most recent state-of-the-art composite propellant binder for SRBs">
+      <Visual exhaustIntensity="4" exhaustDetailIntensity="0.1" exhaustColor="#D1CD00FF" smokeIntensity="5" />
+    </Fuel>
+    <Fuel id="PBAN" name="PBAN" gamma="1.22" density="1.72" molecularWeight="24.2" combustionTemperature="3250" price="0.8" explosivePower="15" description="This was the formulation widely used on the 1960-70's big SRBs">
+      <Visual exhaustIntensity="4" exhaustDetailIntensity="0.1" exhaustColor="#F4A700FF" smokeIntensity="5" />
+    </Fuel>
+    <Fuel id="CTPB" name="CTPB" gamma="1.22" density="1.47" molecularWeight="23.9" combustionTemperature="3250" price="0.8" explosivePower="15" description="This was the formulation widely used on the 1960-70's big SRBs">
+      <Visual exhaustIntensity="4" exhaustDetailIntensity="0.1" exhaustColor="#F4A700FF" smokeIntensity="5" />
+    </Fuel>
+  
+    <!-- MODEL ROCKET FUELS -->
+    	<!-- TO-DO -->
+    
+    <!-- HYBRID FUELS -->
+    <Fuel id="H2O2-85/HTPB" name="H2O2-85%                              HTPB" gamma="1.18" density="1.28" molecularWeight="22.1" combustionTemperature="2694" price="1.12" explosivePower="30" description="on the bright side, if this thing explodes near you the wounds may not get infected">
+      <Visual exhaustIntensity="1" exhaustDetailIntensity="0.1" exhaustColor="#8B9126FF" smokeIntensity="3" />
+    </Fuel>
+    <Fuel id="H2O2-95/HTPB" name="H2O2-95%                              HTPB" gamma="1.18" density="1.31" molecularWeight="22.1" combustionTemperature="2910" price="1.12" explosivePower="30" description="on bright side, if this thing explodes near you the wounds won't get infected">
+      <Visual exhaustIntensity="1.5" exhaustDetailIntensity="0.1" exhaustColor="#8B9126FF" smokeIntensity="4" />
+    </Fuel>
+    <Fuel id="LOX/HTPB" name="LOX                              HTPB" gamma="1.22" density="1.06" molecularWeight="23.1" combustionTemperature="3612" price="1.12" explosivePower="30" description="If you can't decide between cheap SRBs and precise liquid engines you can always combine both">
+      <Visual exhaustIntensity="1" exhaustDetailIntensity="0.1" exhaustColor="#BFAA3FFF" smokeIntensity="5" />
+    </Fuel>
+    <Fuel id="N2O/HTPB" name="Nitrous Oxide                              HTPB" gamma="1.24" density="1.17" molecularWeight="26.6" combustionTemperature="3286" price="1.12" explosivePower="30" description="Can't you get TPI to work? You can always go back to this 'easier to handle' bomb">
+      <Visual exhaustIntensity="1" exhaustDetailIntensity="0.1" exhaustColor="#915F26FF" smokeIntensity="5" />
+    </Fuel>
+    <Fuel id="N2O4/HTPB" name="NTO                              HTPB" gamma="1.23" density="1.28" molecularWeight="25.1" combustionTemperature="3408" price="1.12" explosivePower="30" description="There was a tank of N2O4 left after making the RFNA so why not?">
+      <Visual exhaustIntensity="1" exhaustDetailIntensity="0.1" exhaustColor="#BF793FFF" smokeIntensity="5" />
+    </Fuel>
+    <Fuel id="RFNA/HTPB" name="RFNA                              HTPB" gamma="1.2" density="1.34" molecularWeight="25.5" combustionTemperature="3124" price="1.12" explosivePower="30" description="Have you ever wanted to throttle a red flare? Now you can">
+      <Visual exhaustIntensity="1" exhaustDetailIntensity="0.1" exhaustColor="#BF5D3FFF" smokeIntensity="5" />
+    </Fuel>
+    
+    <!-- NTR FUELS -->
+    <Fuel id="NH3" name="LqdAmmonia" gamma="1.2" density="0.90" molecularWeight="9.5" combustionTemperature="3000" price="0.9" explosivePower="20" description="Make sure to close tight the tanks or else your site is going to stink like hell">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#F2D202FF" smokeIntensity="0.5" />
+    </Fuel>
+    <Fuel id="LOX" name="LqdOxygen" gamma="1.2" density="1.14" molecularWeight="16" combustionTemperature="3000" price="0.9" explosivePower="20" description="delicious wholesome oxygen, so innocent...">
+      <Visual exhaustIntensity="2" exhaustDetailIntensity="0.1" exhaustColor="#BCECFF" smokeIntensity="0.5" />
+    </Fuel>
+    <Fuel id="LH2" name="LqdHydrogen" gamma="1.21" density="0.071" molecularWeight="2.016" combustionTemperature="3000" price="1.35" enginePriceScale="1.10" explosivePower="25" description="Liquid hydrogen for use in rocket engines. Without the oxidizer the liquid hydrogen is even more efficient, but it can only be used in nuclear rocket engines.">
+         <Visual exhaustIntensity="0.125" exhaustDetailIntensity="0.0625" exhaustColor="#FFFFFFFF" smokeIntensity="0.10" />
+    </Fuel>
+
+    <!-- FUTURISTIC ENGINES FUELS -->
+    <Fuel id="H2" name="Hydrogen" gamma="1.21" density="0.071" molecularWeight="1.01" combustionTemperature="1000000" price="1.35" enginePriceScale="1.10" explosivePower="25" description="Liquid hydrogen for use in rocket engines. Without the oxidizer the liquid hydrogen is even more efficient, but it can only be used in nuclear rocket engines.">
+         <Visual exhaustIntensity="2" exhaustDetailIntensity="10" exhaustColor="#0074DB" smokeIntensity="0" />
+    </Fuel>
+    <Fuel id="N2" name="Nitrogen" gamma="1.21" density="0.807" molecularWeight="14.0067" combustionTemperature="1000000" price="1.35" enginePriceScale="1.10" explosivePower="25" description="Liquid hydrogen for use in rocket engines. Without the oxidizer the liquid hydrogen is even more efficient, but it can only be used in nuclear rocket engines.">
+         <Visual exhaustIntensity="2" exhaustDetailIntensity="10" exhaustColor="#47ADB2" smokeIntensity="0" />
+    </Fuel>
+    <Fuel id="He" name="Helium" gamma="1.21" density="0.125" molecularWeight="2.04" combustionTemperature="1000000" price="1.35" enginePriceScale="1.10" explosivePower="25" description="Liquid hydrogen for use in rocket engines. Without the oxidizer the liquid hydrogen is even more efficient, but it can only be used in nuclear rocket engines.">
+         <Visual exhaustIntensity="2" exhaustDetailIntensity="10" exhaustColor="#AEDDE9" smokeIntensity="0" />
+    </Fuel>
+  </Fuels>  
+
+  <RocketEngines>
+     <RocketEngine id="Solid" name="Solid" prefabId="Solid" chamberPressure="7.5" baseMass="25" massScale="0.5" fuels="APCP,HTPB,PBAN,CTPB" throttleResponse="0.5" baseScale="0.6" efficiency="0.71" nozzles="Cone,Bell,Delta,Echo,Aerospike" nozzleRadiusScale="1.00" minThrottle="1" supportsDeactivation="false" gimbalRange="0" gimbalId="" priceScale="1.0" basePrice="10000" audio="Solid" >
+     </RocketEngine>
+     <RocketEngine id="Nuclear" name="Nuclear Thermal" prefabId="Nuclear" fuels="LH2,LOX,H2O,NH3" chamberPressure="4.0" minThrottle="0.2" throttleResponse="0.1" baseMass="250" massScale="100" efficiency="0.95" baseScale="0.4" nozzles="Delta,Cone,Bell,Aerospike" nozzleRadiusScale="0.50" gimbalRange="5" gimbalSpeed="2.5" priceScale="25" basePrice="250000" audio="Medium">
+     </RocketEngine>
+     <RocketEngine id="NuclearAdvanced" name="Nuclear Thermal Advanced" prefabId="Nuclear" fuels="LH2,LOX,H2O,NH3" priceScale="25" >
+        <SubType id="LiquidCore" name="Liquid Core" prefabId="LiquidCore" chamberPressure="6.0" minThrottle="0.2" throttleResponse="0.08" baseMass="350" massScale="100" efficiency="1.4" baseScale="0.5" nozzles="NuclearRegenerativeNozzle,Delta,Cone,NuclearRegenerativeNozzle,ExtendedNuclearNozzle" nozzleRadiusScale="0.50" gimbalId="" gimbalRange="0.5" gimbalSpeed="2.5" priceScale="25" basePrice="500000" audio="Medium" />
+        <SubType id="GasCore" name="Gas Core" prefabId="GasCore" chamberPressure="7.0" minThrottle="0.25" throttleResponse="0.07" baseMass="400" massScale="100" efficiency="3.5" baseScale="0.7" nozzles="NuclearRegenerativeNozzle,Delta,Cone,ExtendedNuclearNozzle" nozzleRadiusScale="0.50" gimbalId="" gimbalRange="2" gimbalSpeed="2.5" priceScale="25" basePrice="500000" audio="Medium" />
+        <SubType id="Pulsed" name="Pulsed NTR" prefabId="Pulsed" chamberPressure="10.0" minThrottle="0.2" throttleResponse="0.08" baseMass="300" massScale="100" efficiency="1.35" baseScale="0.7" nozzles="PulsedNozzle" gimbalId="" nozzleRadiusScale="0.50" gimbalRange="1" gimbalSpeed="2.5" priceScale="25" basePrice="300000" audio="Medium" />
+     </RocketEngine>
+     <RocketEngine id="Vasimr" name="V.A.S.I.M.R" prefabId="Vasimr" chamberPressure="0.5" minThrottle="0.05" throttleResponse="0.3" baseMass="250" massScale="100" efficiency="1" baseScale="0.3" nozzles="Vasimr" nozzleRadiusScale="0.50" gimbalId="" gimbalRange="5" gimbalSpeed="2.5" basePrice="250000" audio="Medium" fuels="H2,N2,He" priceScale="25" wattsPerThrustPower="0.4" >
+     </RocketEngine>
+     <RocketEngine id="Liquid" name="Liquid" prefabId="Liquid" fuels="LOX/LH2,LOX/CH4,LOX/CH4O,LOX/C2H6O-75,LOX/C2H6O-95,LOX/RP1,LOX/N2H4,LOX/MMH,LOX/UDMH,LOX/A-50,LOX/UH25,LOX/NH3,LOX/C6H5NH2,LOX/T-250,N2O4/LH2,N2O4/CH4,N2O4/CH4O,N2O4/C2H6O-75,N2O4/C2H6O-95,N2O4/RP1,N2O4/N2H4,N2O4/MMH,N2O4/UDMH,N2O4/A-50,N2O4/UH25,N2O4/NH3,N2O4/C6H5NH2,N2O4/T-250,RFNA/LH2,RFNA/CH4,RFNA/CH4O,RFNA/C2H6O-75,RFNA/C2H6O-95,RFNA/RP1,RFNA/N2H4,RFNA/MMH,RFNA/UDMH,RFNA/A-50,RFNA/UH25,RFNA/NH3,RFNA/C6H5NH2,RFNA/T-250,H2O2-85/LH2,H2O2-85/CH4,H2O2-85/CH4O,H2O2-85/C2H6O-75,H2O2-85/C2H6O-95,H2O2-85/RP1,H2O2-85/N2H4,H2O2-85/MMH,H2O2-85/UDMH,H2O2-85/A-50,H2O2-85/UH25,H2O2-85/NH3,H2O2-85/C6H5NH2,H2O2-85/T-250,H2O2-95/LH2,H2O2-95/CH4,H2O2-95/CH4O,H2O2-95/C2H6O-75,H2O2-95/C2H6O-95,H2O2-95/RP1,H2O2-95/N2H4,H2O2-95/MMH,H2O2-95/UDMH,H2O2-95/A-50,H2O2-95/UH25,H2O2-95/NH3,H2O2-95/C6H5NH2,H2O2-95/T-250,N2O/LH2,N2O/CH4,N2O/CH4O,N2O/C2H6O-75,N2O/C2H6O-95,N2O/RP1,N2O/N2H4,N2O/MMH,N2O/UDMH,N2O/A-50,N2O/UH25,N2O/NH3,N2O/C6H5NH2,N2O/T-250" nozzleRadiusScale="0.75" supportsDeactivation="true" priceScale="2.5">     
+        <SubType id="PressureFed" name="Pressure-Fed I" prefabId="PressureFedA" chamberPressure="5" baseMass="5" massScale="5" efficiency="0.78" throttleResponse="1" baseScale="0.35" nozzles="AJ,Delta,MerlinB,Aerospike,Bell,Cone" radius="1.5" gimbalRange="20" gimbalSpeed="3" minThrottle="0.15" supportsDeactivation="true" gimbalId="" basePrice="5000" audio="Small" />     
+        <SubType id="Electric" name="Electric" subPrefabId="ElectricA" chamberPressure="20" baseMass="10" massScale="3.5" wattsPerThrustPower="0.09" efficiency="0.80" throttleResponse="2" baseScale="0.2" nozzles="Delta,MerlinB,Aerospike,Bell,Cone" radius="1.5" gimbalRange="15" gimbalSpeed="3" minThrottle="0.3" supportsDeactivation="true" basePrice="10000" audio="Small" />
+        <SubType id="GasGenerator1" name="Gas Generator I" subPrefabId="GasGen1" wattsPerThrustPower="-0.005" chamberPressure="10.0" baseMass="125" massScale="3.5" throttleResponse="0.75" efficiency="0.75" baseScale="0.4" nozzles="Merlin,Redstone,Aerospike,Bell,Cone,Delta" radius="2.25" gimbalRange="10" minThrottle="0.4" supportsDeactivation="true" gimbalSpeed="2.5" basePrice="15000" audio="Medium" />
+        <SubType id="GasGenerator2" name="Gas Generator II" subPrefabId="GasGen2" wattsPerThrustPower="-0.008" chamberPressure="13.0" baseMass="250" massScale="3.5" throttleResponse="0.5" efficiency="0.74" baseScale="0.65" nozzles="F1,F1B,J2,H-1,MerlinB,Redstone,Bell,Cone,Delta" radius="3.0" gimbalRange="2.5" minThrottle="0.45" supportsDeactivation="true" gimbalSpeed="1" basePrice="25000" audio="Heavy" />
+        <SubType id="FullFlow" name="Full Flow Staged" subPrefabId="FullFlow" wattsPerThrustPower="-0.008" fuels="LOX/CH4,LOX/CH4O,LOX/C2H6O-75,LOX/C2H6O-95,LOX/UDMH,LOX/MMH,N2O4/UDMH,N2O4/UH25,N2O4/A-50,H2O2-85/LH2,H2O2-85/CH4,H2O2-85/CH4O,H2O2-85/C2H6O-75,H2O2-85/C2H6O-95,H2O2-85/RP1,H2O2-85/N2H4,H2O2-85/MMH,H2O2-85/UDMH,H2O2-85/A-50,H2O2-85/UH25,H2O2-85/NH3,H2O2-85/C6H5NH2,H2O2-85/T-250,H2O2-95/LH2,H2O2-95/CH4,H2O2-95/CH4O,H2O2-95/C2H6O-75,H2O2-95/C2H6O-95,H2O2-95/RP1,H2O2-95/N2H4,H2O2-95/MMH,H2O2-95/UDMH,H2O2-95/A-50,H2O2-95/UH25,H2O2-95/NH3,H2O2-95/C6H5NH2,H2O2-95/T-250" chamberPressure="27.0" baseMass="250" massScale="5" efficiency="0.9" throttleResponse="0.5" baseScale="0.5" nozzles="Delta,MerlinB,Aerospike,Bell,Cone,Regenerative" radius="2.0" gimbalRange="5" gimbalSpeed="2" gimbalId="Staged" basePrice="100000" minThrottle="0.3" supportsDeactivation="true" priceScale="3.50" audio="Large" />
+        <SubType id="Staged2" name="Oxidizer Rich Staged" subPrefabId="StagedA" wattsPerThrustPower="-0.008" chamberPressure="26.0" fuels="LOX/CH4,LOX/CH4O,LOX/C2H6O-75,LOX/C2H6O-95,LOX/RP1,LOX/UDMH,LOX/MMH,N2O4/UDMH,N2O4/UH25,N2O4/A-50,H2O2-85/LH2,H2O2-85/CH4,H2O2-85/CH4O,H2O2-85/C2H6O-75,H2O2-85/C2H6O-95,H2O2-85/N2H4,H2O2-85/MMH,H2O2-85/UDMH,H2O2-85/A-50,H2O2-85/UH25,H2O2-85/NH3,H2O2-85/C6H5NH2,H2O2-85/T-250,H2O2-95/LH2,H2O2-95/CH4,H2O2-95/CH4O,H2O2-95/C2H6O-75,H2O2-95/C2H6O-95,H2O2-95/N2H4,H2O2-95/MMH,H2O2-95/UDMH,H2O2-95/A-50,H2O2-95/UH25,H2O2-95/NH3,H2O2-95/C6H5NH2,H2O2-95/T-250" baseMass="200" massScale="4.5" efficiency="0.85" throttleResponse="0.5" baseScale="0.5" nozzles="NK-33,Proton,Bell,Cone,Delta,MerlinB,Aerospike" radius="2.0" gimbalRange="5" gimbalSpeed="2" gimbalId="Staged" basePrice="50000" minThrottle="0.3" supportsDeactivation="true" priceScale="3.50" audio="Large" />       
+        <SubType id="Staged1" name="Fuel Rich Staged" subPrefabId="StagedB" wattsPerThrustPower="-0.008" chamberPressure="20.0" fuels="LOX/LH2" baseMass="200" massScale="4.5" efficiency="0.86" throttleResponse="0.5" baseScale="0.5" nozzles="Regenerative,Delta,MerlinB,Aerospike,Bell,Cone" radius="2.0" gimbalRange="5" gimbalSpeed="2" gimbalId="Staged" basePrice="50000" minThrottle="0.25" supportsDeactivation="true" priceScale="3.50" audio="Large" />
+        <SubType id="GasGen3" name="Combustion Tap Off" subPrefabId="TapOff" chamberPressure="7" baseMass="125" massScale="3.5" throttleResponse="0.75" efficiency="0.958" baseScale="0.43" nozzles="Delta,MerlinB,Redstone,Aerospike,Bell,Cone" radius="2.25" gimbalRange="10" minThrottle="0.5" supportsDeactivation="true" gimbalSpeed="2.5" basePrice="15000" audio="Medium" />
+        <SubType id="GasGen4" name="Open Expander" subPrefabId="OpenExpander" fuels="LOX/LH2,LOX/CH4,N2O4/LH2,N2O4/CH4" chamberPressure="10.0" baseMass="250" massScale="3.5" throttleResponse="0.5" efficiency="0.78" baseScale="0.25" nozzles="Delta,RL-10,Bell,Cone" radius="3.0" gimbalRange="2.5" gimbalSpeed="1" minThrottle="0.4" supportsDeactivation="true" basePrice="25000" audio="Heavy" />
+        <SubType id="GasGen5" name="Dual Open Expander" subPrefabId="DualOpenExpander" fuels="LOX/LH2,LOX/CH4" chamberPressure="12" baseMass="250" massScale="3.5" throttleResponse="0.5" efficiency="0.775" baseScale="0.35" nozzles="Delta,RL-10,Bell,Cone" radius="3.0" gimbalRange="2.5" gimbalSpeed="1" minThrottle="0.4" supportsDeactivation="true" basePrice="25000" audio="Heavy" />
+        <SubType id="Expander" name="Expander" subPrefabId="Expander" fuels="LOX/LH2,LOX/CH4,N2O4/LH2,N2O4/CH4" chamberPressure="9.8" baseMass="5" massScale="5" efficiency="0.90" throttleResponse="1" baseScale="0.098" nozzles="RL-10,Delta,Bell,Cone" radius="1.5" gimbalRange="20" gimbalSpeed="3" gimbalId="" minThrottle="0.35" supportsDeactivation="true" basePrice="5000" audio="Small" />
+        <SubType id="DualExpander" name="Dual Expander" subPrefabId="DualExpander" fuels="LOX/LH2,LOX/CH4" chamberPressure="11" baseMass="5" massScale="5" efficiency="0.89" throttleResponse="1" baseScale="0.15" nozzles="RL-10,Delta,Bell,Cone" radius="1.5" gimbalRange="20" gimbalSpeed="3" gimbalId="" minThrottle="0.35" supportsDeactivation="true" basePrice="5000" audio="Small" />
+        <SubType id="PressureFed2" name="Pressure-Fed II" prefabId="PressureFedB" chamberPressure="6.5" baseMass="5" massScale="5" efficiency="0.77" throttleResponse="10" baseScale="0.2" nozzles="AJ,Delta,MerlinB,Aerospike,Bell,Cone" radius="1.5" gimbalRange="20" gimbalSpeed="3" minThrottle="0.1" supportsDeactivation="true" gimbalId="" basePrice="5000" audio="Small" />
+     </RocketEngine>
+     <RocketEngine id="Hybrid" name="Hybrid" prefabId="Hybrid" chamberPressure="7.5" baseMass="25" massScale="0.5" fuels="H2O2-85/HTPB,H2O2-95/HTPB,LOX/HTPB,N2O/HTPB,N2O4/HTPB,RFNA/HTPB" throttleResponse="0.5" baseScale="0.6" efficiency="0.94" nozzles="Cone,Bell,Aerospike" nozzleRadiusScale="1.00" supportsDeactivation="true" gimbalRange="1" priceScale="1.0" basePrice="10000" audio="Large" >
+        <SubType id="Solid/Liquid" name="Solid/Liquid" prefabId="Hybrid" chamberPressure="7.5" baseMass="25" massScale="0.5" fuels="H2O2-85/HTPB,H2O2-95/HTPB,LOX/HTPB,N2O/HTPB,N2O4/HTPB,RFNA/HTPB" throttleResponse="0.5" baseScale="0.6" efficiency="0.94" nozzles="Cone,Bell,Aerospike" nozzleRadiusScale="1.00" minThrottle="0.1" supportsDeactivation="true" gimbalRange="1" priceScale="1.0" basePrice="10000" audio="Large" />
+     </RocketEngine>
+  </RocketEngines>
+  
+  <RocketNozzles>
+     <RocketNozzle id="Bell" name="Bell" prefabId="Base" extensionPrefabId="Bell" extensionRadius="0.30" nozzleRadius="0.5" extensionMin="0.5" extensionMax="4.5" extensionOverlap="0.01" throatRadius="0.5" nozzleLength="1" density="400" exhaustRadiusScale="0.95" textureStyleIds="RocketEngine_Nozzle" extensionTextureStyleIds="RocketEngine_Extension,RocketEngine_Extension2,RocketEngine_Extension3,RocketEngine_Extension4" />
+     <RocketNozzle id="Cone" name="Cone" prefabId="Base" extensionPrefabId="Cone" extensionRadius="0.26" nozzleRadius="0.5" extensionMin="0.5" extensionMax="4.5" extensionOverlap="0.01" throatRadius="0.5" nozzleLength="1" density="400" exhaustRadiusScale="0.95" textureStyleIds="RocketEngine_Nozzle" extensionTextureStyleIds="RocketEngine_Extension,RocketEngine_Extension2,RocketEngine_Extension3,RocketEngine_Extension4"/>
+     <RocketNozzle id="Aerospike" name="Aerospike" throatRadius="0.45" nozzleRadius="0.0" nozzleLength="0.8133829" extensionMin="0.5" extensionMax="1.5" extensionRadius="0" extensionPrefabId="Aerospike" extensionOverlap="0.375" altitudeCompensation="0.990" altitudeCompensationScale="0.004" density="700" thickness="1" priceScale="20" textureStyleIds="RocketEngine_Nozzle" />
+     <RocketNozzle id="Regenerative" name="Alpha" throatRadius="0.40" nozzleRadius="2.15" nozzleLength="3.75" />
+     <RocketNozzle id="NK-33" name="NK-33" throatRadius="0.55" nozzleRadius="2.83" nozzleLength="4.5" />
+     <RocketNozzle id="ExtendedNuclearNozzle" name="Extended Nuclear Nozzle" throatRadius="0.3" nozzleRadius="2.3" nozzleLength="6" />     
+     <RocketNozzle id="AJ" name="AJ-10" throatRadius="0.35" nozzleRadius="2.75" nozzleLength="3.8" />
+     <RocketNozzle id="Proton" name="Proton A" throatRadius="0.45" nozzleRadius="1.9" nozzleLength="4.5" />
+     <RocketNozzle id="J2" name="J-2" throatRadius="0.4" nozzleRadius="2.27" nozzleLength="6" />
+     <RocketNozzle id="RL-10" name="RL-10" throatRadius="0.35" nozzleRadius="2.7" nozzleLength="6" />
+     <RocketNozzle id="H-1" name="H-1" throatRadius="0.8" nozzleRadius="2.22" nozzleLength="6" />
+     <RocketNozzle id="Alpha" name="Alpha" throatRadius="0.40" nozzleRadius="1.85" nozzleLength="3.813335" textureStyleIds="RocketEngine_Nozzle" />
+     <RocketNozzle id="Bravo" name="Bravo" throatRadius="0.50" nozzleRadius="1.5" nozzleLength="4.749401" textureStyleIds="RocketEngine_Nozzle"/>
+     <RocketNozzle id="Delta" name="Delta" throatRadius="0.50" nozzleRadius="1.108" nozzleLength="4.755" extensionPrefabId="Delta" extensionRadius="0.26" extensionMin="0.1" extensionMax="2.5" exhaustRadiusScale="0.95" textureStyleIds="RocketEngine_Nozzle" extensionTextureStyleIds="RocketEngine_Extension,RocketEngine_Extension2,RocketEngine_Extension3,RocketEngine_Extension4"/>
+     <RocketNozzle id="Echo" name="Echo" throatRadius="0.55" nozzleRadius="1.066" nozzleLength="2.456163" textureStyleIds="RocketEngine_Nozzle" />
+     <RocketNozzle id="F1" name="Omega" throatRadius="0.65" nozzleRadius="2.43" nozzleLength="4.9" />
+     <RocketNozzle id="F1B" name="Omega B" throatRadius="0.66" nozzleRadius="2.68" nozzleLength="5" />
+     <RocketNozzle id="Omega" name="Omega" throatRadius="0.65" nozzleRadius="2.5" nozzleLength="5.458097" textureStyleIds="RocketEngine_Nozzle" />
+     <RocketNozzle id="Merlin" name="Merlin" throatRadius="0.50" nozzleRadius="1.5" nozzleLength="4.749401" />
+     <RocketNozzle id="NuclearRegenerativeNozzle" name="Nuclear Regenerative Nozzle" throatRadius="0.25" nozzleRadius="1.05" nozzleLength="4" />
+     <RocketNozzle id="PulsedNozzle" name="Pulsed Nozzle" throatRadius="0.20" nozzleRadius="0.67" nozzleLength="4.749401" />
+     <RocketNozzle id="MerlinB" name="Merlin" throatRadius="0.50" nozzleRadius="1.5" nozzleLength="4.749401" />
+     <RocketNozzle id="Redstone" name="Redstone" throatRadius="0.8" nozzleRadius="1.4" nozzleLength="4" />
+     <RocketNozzle id="Vasimr" name="V.A.S.I.M.R Nozzle" throatRadius="0.4" nozzleRadius="1.1" nozzleLength="4" />
+  </RocketNozzles>
+</Propulsion>
